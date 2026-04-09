@@ -87,34 +87,83 @@ nav button {
     height: 7px;
     background-color: rgb(40, 39, 39);
 }
-.btn{
-    padding:3px 8px;
-    font-weight: bold;
-    background-color: white;
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400 ;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border: 1px solid white;
+    cursor: pointer;
 
 }
-.btn-red{
+
+.btn-red {
     background-color: red;
     color: white;
     padding: 3px 24px;
     font-size: 20px;
     border-radius: 4px;
+    font-weight: 400;
 }
-.hero-buttons{
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+
+}
+
+.hero-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
 }
-.main input{
+
+.main input {
     padding: 7px 101px 8px 14px;
+    color: white;
     font-size: 12px;
     font-weight: 900;
     border-radius: 4px;
     background-color: rgba(23, 23, 23, 0.7);
     border: 1px solid rgba(246, 238, 238, .5);
 }
-.btn-red-sm{
-    background-color: red;
 
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+.secimg{
+ position: relative;
+}
+.secimg img{
+    width: 30vw;
+}
+.secimg video{
+    position: absolute;
+}
+
+#intro-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 9999;
+  transition: opacity 0.5s ease; /* smooth fade out */
+}
+
+#intro-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills viewport without stretching */
+}
+
+.main {
+  display: none; /* hidden until intro ends */
 }

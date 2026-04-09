@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix India – Watch Shows Online, Watch Movies Online</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/assets/images/net-logo.webp" type="image/svg+xml" sizes="16x16">
   </head>
   <body>
+    <div id="intro-overlay">
+      <video id="intro-video" autoplay muted playsinline>
+        <source src="/assets/videos/netflix-intro.mp4" type="video/mp4" />
+      </video>
+    </div>
     <div class="main">
       <nav>
-        <span><img width="53" src="assets/images/lo.svg" alt="" /></span>
+        <span><img width="53" src="/assets/images/logo.svg" alt="" /></span>
         <div class="flex">
-          <button  class="btn">enlish</button>
+          <button class="btn">English</button>
           <button class="btn btn-red-sm">sign in</button>
         </div>
       </nav>
@@ -30,10 +36,23 @@
         >
         <div class="hero-buttons">
           <input type="text" placeholder="email address" />
-          <button class="btn btn-red">get started</button>
+          <button class="btn btn-red">Get Started &gt;</button>
         </div>
       </div>
       <div class="separation"></div>
     </div>
+    <section class="first">
+      <div>
+        Enjoy on your TV Watch on smart TVs, PlayStation, Xbox, Chromecast,
+        Apple TV, Blu-ray players and more
+      </div>
+      <div class="secimg">
+        <img
+          src="https://occ-0-2483-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYWfklg5D5btQoekHBjGHSFXDW_EezXrT97RnSaEwirkVnCt91QaQlcPWCxtfkSrW04hOcHguRrAMgyKTJzs2_PKkFkbs60DHC4.webp?r=05f"
+          alt=""
+        />
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
